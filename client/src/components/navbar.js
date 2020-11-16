@@ -33,12 +33,12 @@ class navbar extends Component {
                 </Link>
               </li>
               <li className="navbar-item">
-                <Link
+                {/* <Link
                   onClick={() => this.props.scrollToMyRef("contact")}
                   className="nav-link"
                 >
                   Contact Me
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </div>
