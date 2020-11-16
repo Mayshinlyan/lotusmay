@@ -1,2 +1,2 @@
-# lotusmay
-Personal Website
+# LotusMay
+ Personal Website
