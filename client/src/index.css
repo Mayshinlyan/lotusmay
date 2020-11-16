@@ -1,0 +1,279 @@
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* css */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: orange;
+}
+
+a:hover {
+  color: darkorange;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.editor-class {
+  min-height: 50vh;
+  border: solid lightgray 1px;
+  padding: 0.5in;
+}
+
+/** App.css **/
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.col {
+  padding: 0 !important;
+}
+
+.container {
+  padding: 5em;
+}
+
+/** Landing.js **/
+
+.navbar-light .navbar-brand {
+  color: white !important;
+  text-shadow: 1px 1px black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+  text-shadow: 1px 1px black;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000000;
+}
+.landingOne {
+  background-image: url("./image/1.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+  position: relative;
+  top: -5em;
+  margin-bottom: -5em;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.landingTitle > h3 {
+  font-family: "Karla", sans-serif;
+  margin: 40vh 0 0 15vh;
+}
+
+.landingTitle > h1 {
+  font-family: "Karla", sans-serif;
+  margin: 5vh 0 0 15vh;
+  font-size: 7em;
+  font-weight: bold !important;
+}
+
+.landingTitle > h2 {
+  font-family: "Karla", sans-serif;
+  margin: 5vh 0 0 15vh;
+}
+
+/*landing about section*/
+
+.landing-about {
+  background-image: url("./image/myanmar.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130vh;
+  position: relative;
+
+  color: white;
+}
+
+.landing-about-left {
+  font-family: "Karla", sans-serif;
+  background-color: rgba(255, 255, 255);
+  color: black;
+  margin: 5em 1em 5em 45em;
+  width: 40em;
+}
+
+.landing-about-left > p {
+  line-height: 2;
+}
+
+/*
+services section
+*/
+
+.landing-services {
+  background-image: url("./image/landing-entrepreneurship-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  z-index: 10000;
+  text-align: center;
+  padding: 5em 2em 10em 5em;
+}
+.landing-services > div {
+  animation: slideIn 0.75s;
+  width: 100%;
+  margin-bottom: 4em;
+}
+.landing-services > div > h1 {
+  position: relative;
+  text-align: center;
+}
+/* .landing-services > div > h1::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 80px;
+  margin: 0 10px;
+  display: inline-block;
+  zoom: 1;
+  right: 100%;
+  background: #333;
+} */
+
+.services {
+  display: inline-block;
+}
+/*
+Contact section
+*/
+
+#contact-form {
+  width: 70%;
+  margin-top: 5em;
+}
+
+.landing-contact {
+  padding: 3em 10em 3em 10em;
+  background-color: blanchedalmond;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 80vh;
+  color: black;
+}
+
+/* Entrepreneurship Page */
+.ent-main {
+  background-color: black;
+  font-family: "Karla", sans-serif;
+  color: white;
+  height: 93.5vh;
+  box-shadow: inset 0 0 50px grey;
+}
+
+.ent-left {
+  padding-top: 15em;
+}
+
+.quote {
+  font-family: "Karla", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.ent-left > h1 {
+  font-size: 6em;
+  font-weight: bold !important;
+  margin-bottom: 0.5em;
+  text-shadow: 1px 1px black;
+}
+
+.ent-left > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  color: white;
+}
+
+.ent-right {
+}
+
+.ent-bb {
+  /* box-shadow: inset 0 0 100px black; */
+}
+
+.ent-greencode {
+  background-color: darkgreen;
+  box-shadow: inset 0 0 100px black;
+  color: white;
+  height: 83vh;
+}
+
+.ent-greencode > div {
+  padding-bottom: 2em !important;
+  text-align: center;
+}
+
+.ent-greencode > p {
+  padding-top: 0em !important;
+  width: 70%;
+  font-size: x-large;
+}
+
+.ent-contact {
+  background-image: url("./image/landing-entrepreneurship-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom left;
+  height: 50vh;
+  color: white;
+  text-align: center;
+}
+
+.Footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
